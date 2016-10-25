@@ -1,0 +1,213 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Process video files &mdash; Head Tracking 0.0.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Head Tracking 0.0.1 documentation" href="../index.html"/>
+        <link rel="prev" title="Installation and Setup" href="../setup/setup.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Head Tracking
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../setup/setup.html">Installation and Setup</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Process video files</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Head Tracking</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Process video files</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/tracking/tracking.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="process-video-files">
+<h1>Process video files<a class="headerlink" href="#process-video-files" title="Permalink to this headline">¶</a></h1>
+<ol class="arabic simple">
+<li>Place <a class="reference download internal" href="../_downloads/trackHead.py" download=""><code class="xref download docutils literal"><span class="pre">trackHead.py</span></code></a> in a folder with .mpg files and timestamps.csv</li>
+<li>Open terminal session, navigate to the folder with the video files and tracking script, and execute the following:</li>
+</ol>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">tracking</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>All of the separate .mpg files will be combined into a single .mp4 that contains 3 frames stiched together.</p>
+<a class="reference internal image-reference" href="../_images/mp4_output.png"><img alt="../_images/mp4_output.png" class="align-center" src="../_images/mp4_output.png" style="width: 2032.0px; height: 699.0px;" /></a>
+<p>The left frame is the original video footage.The center frame shows the pixels that remain after filtering
+for red and blue. The right frame places circlular marks at the centers of the filtered pixel clusters.</p>
+<p>A .csv file is also created that combines the timestamp.csv data with x,y coorindinates of the tracked LEDs</p>
+<a class="reference internal image-reference" href="../_images/csv.png"><img alt="../_images/csv.png" class="align-center" src="../_images/csv.png" style="width: 948.0px; height: 314.0px;" /></a>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../setup/setup.html" class="btn btn-neutral" title="Installation and Setup" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Andy Lustig.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
