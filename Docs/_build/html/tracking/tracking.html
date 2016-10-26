@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Process video files &mdash; Head Tracking 0.0.1 documentation</title>
+  <title>Process Video Files &mdash; Head Tracking 0.0.2 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="Head Tracking 0.0.1 documentation" href="../index.html"/>
+    <link rel="top" title="Head Tracking 0.0.2 documentation" href="../index.html"/>
         <link rel="prev" title="Installation and Setup" href="../setup/setup.html"/> 
 
   
@@ -59,7 +59,7 @@
             
             
               <div class="version">
-                0.0.1
+                0.0.2
               </div>
             
           
@@ -82,7 +82,7 @@
             
                 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../setup/setup.html">Installation and Setup</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Process video files</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Process Video Files</a></li>
 </ul>
 
             
@@ -113,7 +113,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
       
-    <li>Process video files</li>
+    <li>Process Video Files</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -128,10 +128,13 @@
            <div itemprop="articleBody">
             
   <div class="section" id="process-video-files">
-<h1>Process video files<a class="headerlink" href="#process-video-files" title="Permalink to this headline">¶</a></h1>
+<h1>Process Video Files<a class="headerlink" href="#process-video-files" title="Permalink to this headline">¶</a></h1>
 <ol class="arabic simple">
-<li>Place <a class="reference download internal" href="../_downloads/trackHead.py" download=""><code class="xref download docutils literal"><span class="pre">trackHead.py</span></code></a> in a folder with .mpg files and timestamps.csv</li>
-<li>Open terminal session, navigate to the folder with the video files and tracking script, and execute the following:</li>
+<li>Place <a class="reference download internal" href="../_downloads/trackHead.py" download=""><code class="xref download docutils literal"><span class="pre">trackHead.py</span></code></a> into a folder that contains the timestamps.csv and .mpg files that you want processed</li>
+<li>Open a terminal window</li>
+<li><a class="reference internal" href="../setup/setup.html#switch"><span class="std std-ref">Switch into your trackingEnv</span></a> if you are not already in it</li>
+<li>Navigate to the folder that you just placed trackHead.py into in step 1</li>
+<li>Run the trackHead.py script by entering the following:</li>
 </ol>
 <div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">trackHead</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
@@ -183,7 +186,7 @@ for red and blue. The right frame places circlular marks at the centers of the f
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'0.0.1',
+            VERSION:'0.0.2',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

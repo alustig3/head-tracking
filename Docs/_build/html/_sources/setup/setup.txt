@@ -9,13 +9,15 @@ Install the Python 3.5 version of Anaconda
 Create a new virtual environment
 --------------------------------
 
-Open a terminal session and enter the following:
+Open a terminal window and enter the following:
 
 .. code::
 
   conda create -n trackingEnv python=3.5 numpy pandas
 
-This will create a python 3.5 environment called "trackingEnv" with numpy and pandas installed.
+This will create a Python 3.5 environment called "trackingEnv" with the numpy and pandas libraries installed.
+
+.. _switch:
 
 Switch into your new environment
 --------------------------------
@@ -33,6 +35,8 @@ Windows
 .. code::
 
   activate trackingEnv
+
+``(trackingEnv)`` should now be shown at the start of the command line.
 
 Install OpenCV 3.1 in your environment
 --------------------------------------

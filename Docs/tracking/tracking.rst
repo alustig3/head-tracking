@@ -1,8 +1,10 @@
-Process video files
+Process Video Files
 ===================
-
-1. Place :download:`trackHead.py<../../trackHead.py>` in a folder with .mpg files and timestamps.csv
-2. Open terminal session, navigate to the folder with the video files and tracking script, and execute the following:
+#. Place :download:`trackHead.py<../../trackHead.py>` into a folder that contains the timestamps.csv and .mpg files that you want processed
+#. Open a terminal window
+#. :ref:`Switch into your trackingEnv<switch>` if you are not already in it
+#. Navigate to the folder that you just placed trackHead.py into in step 1
+#. Run the trackHead.py script by entering the following:
 
 .. code::
 
