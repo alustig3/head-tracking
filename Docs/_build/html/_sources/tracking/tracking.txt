@@ -6,7 +6,7 @@ Process video files
 
 .. code::
 
-  python tracking.py
+  python trackHead.py
 
 All of the separate .mpg files will be combined into a single .mp4 that contains 3 frames stiched together.
 

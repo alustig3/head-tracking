@@ -13,7 +13,7 @@ Open a terminal session and enter the following:
 
 .. code::
 
-  conda create -n trackingEnv python = 3.5 numpy pandas
+  conda create -n trackingEnv python=3.5 numpy pandas
 
 This will create a python 3.5 environment called "trackingEnv" with numpy and pandas installed.
 
