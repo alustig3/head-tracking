@@ -47,7 +47,6 @@ def printTimeStats(_fps,wasInterrupted=False):
 
 def cleanFrame(startFrame):
     startFrame[:3,:10] = 0       #overwrites timestamp pixels in the top left corner
-    startFrame[185:189,399:403] = 0 #overwrites right nosepoke IR LED that shows up on camera
 
 def createOutputFrame(frame):
     outFrame = frame.copy()
@@ -140,11 +139,11 @@ blue = [255,102,0]
 lightRed = [100,100,255]
 lightBlue = [165,255,100]
 #Create mask objects
-blueMask = colorMask(130,194,0,255,100,255)
-redMask = colorMask(30,200,0,255,60,255,hueIsBetween=False)
+blueMask = colorMask(130,194,0,255,105,255)
+redMask = colorMask(10,200,0,255,171,255,hueIsBetween=False)
 
 print("Processing footage")
-print("Press `cntrl + C` to stop")
+print("Press `ctrl + c` to stop")
 startTime = t.time()
 try:
     redPair,bluePair = clusterPair(),clusterPair() #initialize cluster pairs
@@ -208,6 +207,10 @@ try:
                 VidOutObject.write(combined)
                 csvWriter.writerow([frameNum,stampRow[0],stampRow[1],stampRow[2],stampRow[3],mills,
                                     redPair.x1,redPair.y1,redPair.x2,redPair.y2,bluePair.x1,bluePair.y1,bluePair.x2,bluePair.y2])
+                if bluePair.x1 == -1:
+                    bluePair = oldbluePair  #return to last known center
+                if redPair.x1 == -1:
+                    redPair = oldredPair    #return to last know center
                 frameNum+=1
             else:
                 break

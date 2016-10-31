@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Process Video Files &mdash; Head Tracking 0.0.2 documentation</title>
+  <title>Process Video Files &mdash; Head Tracking 0.0.3 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="Head Tracking 0.0.2 documentation" href="../index.html"/>
+    <link rel="top" title="Head Tracking 0.0.3 documentation" href="../index.html"/>
         <link rel="prev" title="Installation and Setup" href="../setup/setup.html"/> 
 
   
@@ -59,7 +59,7 @@
             
             
               <div class="version">
-                0.0.2
+                0.0.3
               </div>
             
           
@@ -82,7 +82,16 @@
             
                 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../setup/setup.html">Installation and Setup</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Process Video Files</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Process Video Files</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#prepare-video-processing-directory">Prepare video processing directory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#execute-tracking-script-from-the-command-line">Execute tracking script from the command line</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resulting-output">Resulting Output</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#annotated-footage">Annotated footage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tracked-coordinates-data">Tracked coordinates data</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             
@@ -129,22 +138,37 @@
             
   <div class="section" id="process-video-files">
 <h1>Process Video Files<a class="headerlink" href="#process-video-files" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="prepare-video-processing-directory">
+<h2>Prepare video processing directory<a class="headerlink" href="#prepare-video-processing-directory" title="Permalink to this headline">¶</a></h2>
+<p>Place <a class="reference download internal" href="../_downloads/trackHead.py" download=""><code class="xref download docutils literal"><span class="pre">trackHead.py</span></code></a> into a folder that contains the timestamps.csv and .mpg files that you want processed</p>
+</div>
+<div class="section" id="execute-tracking-script-from-the-command-line">
+<h2>Execute tracking script from the command line<a class="headerlink" href="#execute-tracking-script-from-the-command-line" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li>Place <a class="reference download internal" href="../_downloads/trackHead.py" download=""><code class="xref download docutils literal"><span class="pre">trackHead.py</span></code></a> into a folder that contains the timestamps.csv and .mpg files that you want processed</li>
 <li>Open a terminal window</li>
 <li><a class="reference internal" href="../setup/setup.html#switch"><span class="std std-ref">Switch into your trackingEnv</span></a> if you are not already in it</li>
-<li>Navigate to the folder that you just placed trackHead.py into in step 1</li>
+<li>cd into your video processing directory</li>
 <li>Run the trackHead.py script by entering the following:</li>
 </ol>
 <div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">trackHead</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
+</div>
+<div class="section" id="resulting-output">
+<h2>Resulting Output<a class="headerlink" href="#resulting-output" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="annotated-footage">
+<h3>Annotated footage<a class="headerlink" href="#annotated-footage" title="Permalink to this headline">¶</a></h3>
 <p>All of the separate .mpg files will be combined into a single .mp4 that contains 3 frames stiched together.</p>
 <a class="reference internal image-reference" href="../_images/mp4_output.png"><img alt="../_images/mp4_output.png" class="align-center" src="../_images/mp4_output.png" style="width: 2032.0px; height: 699.0px;" /></a>
-<p>The left frame is the original video footage.The center frame shows the pixels that remain after filtering
+<p>The left frame is the original video footage. The center frame shows the pixels that remain after filtering
 for red and blue. The right frame places circlular marks at the centers of the filtered pixel clusters.</p>
-<p>A .csv file is also created that combines the timestamp.csv data with x,y coorindinates of the tracked LEDs</p>
+</div>
+<div class="section" id="tracked-coordinates-data">
+<h3>Tracked coordinates data<a class="headerlink" href="#tracked-coordinates-data" title="Permalink to this headline">¶</a></h3>
+<p>A .csv file that combines the timestamp.csv data with x,y coorindinates of the tracked LEDs.</p>
 <a class="reference internal image-reference" href="../_images/csv.png"><img alt="../_images/csv.png" class="align-center" src="../_images/csv.png" style="width: 948.0px; height: 314.0px;" /></a>
+</div>
+</div>
 </div>
 
 
@@ -186,7 +210,7 @@ for red and blue. The right frame places circlular marks at the centers of the f
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'0.0.2',
+            VERSION:'0.0.3',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

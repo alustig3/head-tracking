@@ -7,7 +7,7 @@ a single annotated .mp4 video file as well as a .csv file containing the locatio
 within each frame.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    setup/setup.rst
    tracking/tracking.rst
