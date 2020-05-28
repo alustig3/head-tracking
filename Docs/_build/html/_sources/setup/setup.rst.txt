@@ -1,10 +1,10 @@
 Installation and Setup
 ======================
 
-Install the Python 3.5 version of Anaconda
+Install the Python 3.7 version of Anaconda
 ------------------------------------------
 
-`Donwload Here <https://www.continuum.io/downloads>`_
+`Download Here <https://www.anaconda.com/distribution/>`_
 
 Create a new virtual environment
 --------------------------------
@@ -13,34 +13,24 @@ Open a terminal window and enter the following:
 
 .. code::
 
-  conda create -n trackingEnv python=3.5 numpy pandas
+  conda create -n trackingEnv python=3.8 numpy pandas
 
-This will create a Python 3.5 environment called "trackingEnv" with the numpy and pandas libraries installed.
+This will create a Python 3.8 environment called "trackingEnv" with the numpy and pandas libraries installed.
 
 .. _switch:
 
 Switch into your new environment
 --------------------------------
 
-Mac
-+++
-
 .. code::
 
-  source activate trackingEnv
-
-Windows
-+++++++
-
-.. code::
-
-  activate trackingEnv
+  conda activate trackingEnv
 
 ``(trackingEnv)`` should now be shown at the start of the command line.
 
-Install OpenCV 3.1 in your environment
+Install OpenCV 4.2 in your environment
 --------------------------------------
 
 .. code::
 
-  conda install -c menpo opencv3=3.1.0
+  conda install -c conda-forge opencv=4.2.0

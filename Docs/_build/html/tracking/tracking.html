@@ -8,44 +8,44 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Process Video Files &mdash; Head Tracking 0.0.3 documentation</title>
+  <title>Processing Video Files &mdash; Head Tracking 0.0.3 documentation</title>
   
 
   
   
+  
+  
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
-  
-  
-    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="Head Tracking 0.0.3 documentation" href="../index.html"/>
-        <link rel="prev" title="Installation and Setup" href="../setup/setup.html"/> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Installation and Setup" href="../setup/setup.html" /> 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
+   
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -80,9 +80,12 @@
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../setup/setup.html">Installation and Setup</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Process Video Files</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Processing Video Files</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#prepare-video-processing-directory">Prepare video processing directory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#execute-tracking-script-from-the-command-line">Execute tracking script from the command line</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#resulting-output">Resulting Output</a><ul>
@@ -103,54 +106,74 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../index.html">Head Tracking</a>
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Head Tracking</a>
+        
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../index.html">Docs</a> &raquo;</li>
-      
-    <li>Process Video Files</li>
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Processing Video Files</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="../_sources/tracking/tracking.txt" rel="nofollow"> View page source</a>
+            
+            <a href="../_sources/tracking/tracking.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="process-video-files">
-<h1>Process Video Files<a class="headerlink" href="#process-video-files" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="processing-video-files">
+<h1>Processing Video Files<a class="headerlink" href="#processing-video-files" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="prepare-video-processing-directory">
 <h2>Prepare video processing directory<a class="headerlink" href="#prepare-video-processing-directory" title="Permalink to this headline">¶</a></h2>
-<p>Place <a class="reference download internal" href="../_downloads/trackHead.py" download=""><code class="xref download docutils literal"><span class="pre">trackHead.py</span></code></a> into a folder that contains the timestamps.csv and .mpg files that you want processed</p>
+<p>Place <a class="reference download internal" download="" href="../_downloads/2675fa33844d11d1705c7674fdb2539c/trackHead.py"><code class="xref download docutils literal notranslate"><span class="pre">trackHead.py</span></code></a> into a folder that contains the timestamps.csv and .mpg files that you want processed</p>
 </div>
 <div class="section" id="execute-tracking-script-from-the-command-line">
 <h2>Execute tracking script from the command line<a class="headerlink" href="#execute-tracking-script-from-the-command-line" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li>Open a terminal window</li>
-<li><a class="reference internal" href="../setup/setup.html#switch"><span class="std std-ref">Switch into your trackingEnv</span></a> if you are not already in it</li>
-<li>cd into your video processing directory</li>
-<li>Run the trackHead.py script by entering the following:</li>
+<li><p>Open a terminal window</p></li>
+<li><p><a class="reference internal" href="../setup/setup.html#switch"><span class="std std-ref">Switch into your trackingEnv</span></a> if you are not already in it</p></li>
+<li><p>cd into your video processing directory</p></li>
+<li><p>Run the trackHead.py script by entering the following:</p></li>
 </ol>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">trackHead</span><span class="o">.</span><span class="n">py</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">trackHead</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
 </div>
@@ -159,27 +182,28 @@
 <div class="section" id="annotated-footage">
 <h3>Annotated footage<a class="headerlink" href="#annotated-footage" title="Permalink to this headline">¶</a></h3>
 <p>All of the separate .mpg files will be combined into a single .mp4 that contains 3 frames stiched together.</p>
-<a class="reference internal image-reference" href="../_images/mp4_output.png"><img alt="../_images/mp4_output.png" class="align-center" src="../_images/mp4_output.png" style="width: 2032.0px; height: 699.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/mp4_output.png"><img alt="../_images/mp4_output.png" class="align-center" src="../_images/mp4_output.png" style="width: 100%;" /></a>
 <p>The left frame is the original video footage. The center frame shows the pixels that remain after filtering
 for red and blue. The right frame places circlular marks at the centers of the filtered pixel clusters.</p>
 </div>
 <div class="section" id="tracked-coordinates-data">
 <h3>Tracked coordinates data<a class="headerlink" href="#tracked-coordinates-data" title="Permalink to this headline">¶</a></h3>
 <p>A .csv file that combines the timestamp.csv data with x,y coorindinates of the tracked LEDs.</p>
-<a class="reference internal image-reference" href="../_images/csv.png"><img alt="../_images/csv.png" class="align-center" src="../_images/csv.png" style="width: 948.0px; height: 314.0px;" /></a>
+<a class="reference internal image-reference" href="../_images/csv.png"><img alt="../_images/csv.png" class="align-center" src="../_images/csv.png" style="width: 100%;" /></a>
 </div>
 </div>
 </div>
 
 
            </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="../setup/setup.html" class="btn btn-neutral" title="Installation and Setup" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../setup/setup.html" class="btn btn-neutral float-left" title="Installation and Setup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -188,11 +212,11 @@ for red and blue. The right frame places circlular marks at the centers of the f
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, Andy Lustig.
+        &copy; Copyright 2016, Andy Lustig
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -205,35 +229,15 @@ for red and blue. The right frame places circlular marks at the centers of the f
   
 
 
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'0.0.3',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-  
-
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
+
+  
+  
+    
    
 
 </body>

@@ -13,40 +13,40 @@
 
   
   
+  
+  
 
   
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
-  
-  
-    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="Head Tracking 0.0.3 documentation" href="../index.html"/>
-        <link rel="next" title="Process Video Files" href="../tracking/tracking.html"/>
-        <link rel="prev" title="Head Tracking Documentation" href="../index.html"/> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Processing Video Files" href="../tracking/tracking.html" />
+    <link rel="prev" title="Head Tracking Documentation" href="../index.html" /> 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
+   
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -81,19 +81,18 @@
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Installation and Setup</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#install-the-python-3-5-version-of-anaconda">Install the Python 3.5 version of Anaconda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-the-python-3-7-version-of-anaconda">Install the Python 3.7 version of Anaconda</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#create-a-new-virtual-environment">Create a new virtual environment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#switch-into-your-new-environment">Switch into your new environment</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#mac">Mac</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#windows">Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#switch-into-your-new-environment">Switch into your new environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-opencv-4-2-in-your-environment">Install OpenCV 4.2 in your environment</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#install-opencv-3-1-in-your-environment">Install OpenCV 3.1 in your environment</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../tracking/tracking.html">Process Video Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tracking/tracking.html">Processing Video Files</a></li>
 </ul>
 
             
@@ -105,34 +104,54 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../index.html">Head Tracking</a>
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Head Tracking</a>
+        
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../index.html">Docs</a> &raquo;</li>
-      
-    <li>Installation and Setup</li>
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Installation and Setup</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="../_sources/setup/setup.txt" rel="nofollow"> View page source</a>
+            
+            <a href="../_sources/setup/setup.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -140,37 +159,28 @@
             
   <div class="section" id="installation-and-setup">
 <h1>Installation and Setup<a class="headerlink" href="#installation-and-setup" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="install-the-python-3-5-version-of-anaconda">
-<h2>Install the Python 3.5 version of Anaconda<a class="headerlink" href="#install-the-python-3-5-version-of-anaconda" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://www.continuum.io/downloads">Donwload Here</a></p>
+<div class="section" id="install-the-python-3-7-version-of-anaconda">
+<h2>Install the Python 3.7 version of Anaconda<a class="headerlink" href="#install-the-python-3-7-version-of-anaconda" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://www.anaconda.com/distribution/">Download Here</a></p>
 </div>
 <div class="section" id="create-a-new-virtual-environment">
 <h2>Create a new virtual environment<a class="headerlink" href="#create-a-new-virtual-environment" title="Permalink to this headline">¶</a></h2>
 <p>Open a terminal window and enter the following:</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">trackingEnv</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.5</span> <span class="n">numpy</span> <span class="n">pandas</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">trackingEnv</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.8</span> <span class="n">numpy</span> <span class="n">pandas</span>
 </pre></div>
 </div>
-<p>This will create a Python 3.5 environment called &#8220;trackingEnv&#8221; with the numpy and pandas libraries installed.</p>
+<p>This will create a Python 3.8 environment called “trackingEnv” with the numpy and pandas libraries installed.</p>
 </div>
 <div class="section" id="switch-into-your-new-environment">
 <span id="switch"></span><h2>Switch into your new environment<a class="headerlink" href="#switch-into-your-new-environment" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="mac">
-<h3>Mac<a class="headerlink" href="#mac" title="Permalink to this headline">¶</a></h3>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">source</span> <span class="n">activate</span> <span class="n">trackingEnv</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="n">trackingEnv</span>
 </pre></div>
 </div>
+<p><code class="docutils literal notranslate"><span class="pre">(trackingEnv)</span></code> should now be shown at the start of the command line.</p>
 </div>
-<div class="section" id="windows">
-<h3>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h3>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">activate</span> <span class="n">trackingEnv</span>
-</pre></div>
-</div>
-<p><code class="docutils literal"><span class="pre">(trackingEnv)</span></code> should now be shown at the start of the command line.</p>
-</div>
-</div>
-<div class="section" id="install-opencv-3-1-in-your-environment">
-<h2>Install OpenCV 3.1 in your environment<a class="headerlink" href="#install-opencv-3-1-in-your-environment" title="Permalink to this headline">¶</a></h2>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">menpo</span> <span class="n">opencv3</span><span class="o">=</span><span class="mf">3.1</span><span class="o">.</span><span class="mi">0</span>
+<div class="section" id="install-opencv-4-2-in-your-environment">
+<h2>Install OpenCV 4.2 in your environment<a class="headerlink" href="#install-opencv-4-2-in-your-environment" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">opencv</span><span class="o">=</span><span class="mf">4.2</span><span class="o">.</span><span class="mi">0</span>
 </pre></div>
 </div>
 </div>
@@ -178,15 +188,16 @@
 
 
            </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../tracking/tracking.html" class="btn btn-neutral float-right" title="Process Video Files" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../tracking/tracking.html" class="btn btn-neutral float-right" title="Processing Video Files" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../index.html" class="btn btn-neutral" title="Head Tracking Documentation" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../index.html" class="btn btn-neutral float-left" title="Head Tracking Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -195,11 +206,11 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, Andy Lustig.
+        &copy; Copyright 2016, Andy Lustig
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -212,35 +223,15 @@
   
 
 
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'0.0.3',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-  
-
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
+
+  
+  
+    
    
 
 </body>

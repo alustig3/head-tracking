@@ -1,5 +1,5 @@
-Process Video Files
-===================
+Processing Video Files
+======================
 
 Prepare video processing directory
 ----------------------------------
@@ -26,7 +26,7 @@ All of the separate .mpg files will be combined into a single .mp4 that contains
 
 .. image:: mp4_output.png
   :align: center
-  :scale: 100 %
+  :width: 100 %
 
 The left frame is the original video footage. The center frame shows the pixels that remain after filtering
 for red and blue. The right frame places circlular marks at the centers of the filtered pixel clusters.
@@ -37,4 +37,4 @@ A .csv file that combines the timestamp.csv data with x,y coorindinates of the t
 
 .. image:: csv.png
   :align: center
-  :scale: 100 %
+  :width: 100 %
